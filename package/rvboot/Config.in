@@ -1,0 +1,11 @@
+config BR2_PACKAGE_RVBOOT
+	bool "rv boot files generation"
+
+config BR2_PACKAGE_RVBOOT_BOARD_DEFCONFIG
+	string "Board defconfig"
+
+config BR2_PACKAGE_RVBOOT_CONFIG_FRAGMENT_FILE
+	string "Board fragment"
+
+config BR2_PACKAGE_RVBOOT_CONFIG_FRAGMENT_FILE_NAME
+	string "Board fragment name"

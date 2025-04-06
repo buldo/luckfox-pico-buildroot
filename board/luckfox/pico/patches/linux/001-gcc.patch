@@ -1,0 +1,16 @@
+Signed-off-by: Roman Buldygin <froooks@gmail.com>
+---
+diff --git a/Makefile b/Makefile
+--- a/Makefile	2025-03-29 21:48:22.000000000 +0000
++++ b/Makefile	2025-04-01 00:56:43.561131595 +0000
+@@ -522,7 +522,9 @@
+ 		   -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE \
+ 		   -Werror=implicit-function-declaration -Werror=implicit-int \
+ 		   -Werror=return-type -Wno-format-security \
+-		   -std=gnu89
++		   -std=gnu89 -Wno-stringop-overread -Wno-dangling-pointer \
++                   -Wno-array-compare -Wno-enum-int-mismatch -Wno-int-to-pointer-cast
++
+ KBUILD_CPPFLAGS := -D__KERNEL__
+ KBUILD_AFLAGS_KERNEL :=
+ KBUILD_CFLAGS_KERNEL :=

@@ -1,0 +1,14 @@
+Signed-off-by: Roman Buldygin <froooks@gmail.com>
+---
+diff --git a/u-boot/Makefile b/u-boot/Makefile
+index 1012b065a..f16ac1e55 100644
+--- a/u-boot/Makefile
++++ b/u-boot/Makefile
+@@ -630,6 +630,7 @@ include scripts/Makefile.extrawarn
+ KBUILD_CPPFLAGS += $(KCPPFLAGS)
+ KBUILD_AFLAGS += $(KAFLAGS)
+ KBUILD_CFLAGS += $(KCFLAGS)
++KBUILD_CFLAGS += -Wno-enum-int-mismatch -Wno-maybe-uninitialized -Wno-error=address
+ 
+ # Use UBOOTINCLUDE when you must reference the include/ directory.
+ # Needed to be compatible with the O= option

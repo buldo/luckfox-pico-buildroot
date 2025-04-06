@@ -1,0 +1,1 @@
+source "$BR2_EXTERNAL_OPENHD_PATH/package/rvboot/Config.in"
